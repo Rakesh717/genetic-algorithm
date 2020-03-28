@@ -1,5 +1,5 @@
 let count = 0;
-let obstacleSize = 300;
+let obstacleSize = 350;
 let mutationRate = 0.01;
 
 
@@ -57,7 +57,7 @@ class Rocket {
             this.completed = true;
         }
 
-        if (this.pos.x > width/2-obstacleSize/2.2 && this.pos.x < width/2+obstacleSize/2.2 && this.pos.y > height/2-obstacleSize/2.2 && this.pos.y < height/2+obstacleSize/2.2) {
+        if (this.pos.x > width / 2 - obstacleSize / 2.2 && this.pos.x < width / 2 + obstacleSize / 2.2 && this.pos.y > height / 2 - obstacleSize / 2.2 && this.pos.y < height / 2 + obstacleSize / 2.2) {
             this.crashed = true;
         }
 
@@ -71,8 +71,8 @@ class Rocket {
     }
 
     mutate() {
-        if(random(1) < mutationRate){
-            this.genes = p5.Vector.random2D(); 
+        if (random(1) < mutationRate) {
+            this.genes = p5.Vector.random2D();
         }
     }
 }
