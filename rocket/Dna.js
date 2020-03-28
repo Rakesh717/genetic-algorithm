@@ -1,4 +1,4 @@
-let lifespan = 500;
+let lifespan = 400;
 let generation = 1;
 maxForce = .1;
 
